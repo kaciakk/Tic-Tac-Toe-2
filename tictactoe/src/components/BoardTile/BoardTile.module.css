@@ -1,0 +1,100 @@
+.box {
+  width: 150px;
+  height: 150px;
+  background-color: #ffb803;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.boxPlayerOneLine {
+  width: 15px;
+  height: 100px;
+  background-color: #ffffff;
+  rotate: 45deg;
+  border-radius: 50px;
+  position: absolute;
+  animation: xAnimation 0.1s ease-in;
+}
+.boxPlayerOneLineTwo {
+  width: 15px;
+  height: 100px;
+  background-color: #ffffff;
+  rotate: -45deg;
+  border-radius: 50px;
+  position: absolute;
+  animation: xAnimation2 0.2s ease-in;
+}
+.boxPlayerTwoObject {
+  width: 100px;
+  height: 100px;
+  background-color: #67523a;
+  border-radius: 50px;
+  position: relative;
+  animation: oAnimation 0.2s ease-in;
+}
+.boxPlayerTwoCircle {
+  width: 55px;
+  height: 60px;
+  background-color: #ffb803;
+  border-radius: 50px;
+  position: absolute;
+  animation: oAnimation 0.2s ease-in;
+}
+
+@keyframes xAnimation {
+  0% {
+    transform: translateY(-60px);
+    opacity: 0;
+  }
+
+  60% {
+    transform: translateY(10px);
+    opacity: 1;
+  }
+
+  80% {
+    transform: translateY(-5px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes xAnimation2 {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+
+  60% {
+    transform: translateY(00px);
+    opacity: 1;
+  }
+
+  80% {
+    transform: translateY(5px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes oAnimation {
+  0% {
+    transform: scale(0) rotate(-180deg);
+    opacity: 0;
+  }
+
+  60% {
+    transform: scale(1.1) rotate(20deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}

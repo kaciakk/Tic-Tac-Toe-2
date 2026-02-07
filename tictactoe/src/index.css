@@ -1,0 +1,26 @@
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+}
+
+body {
+  background-color: white;
+}
+
+button {
+  background-color: #67523a;
+  border-radius: 20px;
+  width: 200px;
+  height: 70px;
+  color: white;
+  border: none;
+  font-weight: bold;
+  font-size: 30px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #856d53;
+}

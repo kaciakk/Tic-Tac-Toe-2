@@ -1,0 +1,10 @@
+.board {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+}
+
+.board_score {
+  color: #ff9203;
+  font-size: 50px;
+}

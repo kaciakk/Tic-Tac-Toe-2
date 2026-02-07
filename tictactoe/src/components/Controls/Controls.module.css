@@ -1,0 +1,33 @@
+.title {
+  width: 50rem;
+  height: 80px;
+  font-size: 80px;
+  color: #ff9203;
+}
+.move {
+  display: flex;
+  background-color: #ff9203;
+  border-radius: 20px 0 0 20px;
+  font-size: 30px;
+  width: 50rem;
+  height: 60px;
+  color: white;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 10px;
+}
+.players_score {
+  width: 50rem;
+  height: auto;
+  color: #67523a;
+  font-size: 30px;
+}
+
+.controls {
+  display: flex;
+  width: 50rem;
+  height: auto;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
