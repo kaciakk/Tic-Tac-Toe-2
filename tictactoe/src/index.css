@@ -24,3 +24,20 @@ button {
 button:hover {
   background-color: #856d53;
 }
+
+@media (max-width: 1300px) {
+  button {
+    background-color: #67523a;
+    border-radius: 20px;
+    width: 120px;
+    height: 60px;
+    color: white;
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #856d53;
+  }
+}
