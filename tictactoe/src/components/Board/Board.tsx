@@ -3,7 +3,7 @@ import styles from "./Board.module.css";
 
 export type BoardProps = {
   size: number[];
-  onClick: (index: number) => void;
+  onClick: (e: React.MouseEvent<HTMLDivElement>) => void;
   onPlayerOneMove: number[];
   onPlayerTwoMove: number[];
 };
@@ -19,6 +19,7 @@ const Board = ({
         {size.map((box) => {
           return (
             <BoardTile
+              key={box}
               box={box}
               onClick={onClick}
               onPlayerOneMove={onPlayerOneMove}

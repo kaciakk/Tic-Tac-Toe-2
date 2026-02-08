@@ -20,12 +20,12 @@ const BoardTile = ({
           <div className={styles.boxPlayerOneLineTwo}></div>
         </div>
       ) : onPlayerTwoMove.includes(box) ? (
-        <div id={box} onClick={onClick} className={styles.box}>
+        <div id={String(box)} onClick={onClick} className={styles.box}>
           <div className={styles.boxPlayerTwoObject}></div>
           <div className={styles.boxPlayerTwoCircle}></div>
         </div>
       ) : (
-        <div id={box} onClick={onClick} className={styles.box}></div>
+        <div id={String(box)} onClick={onClick} className={styles.box}></div>
       )}
     </>
   );

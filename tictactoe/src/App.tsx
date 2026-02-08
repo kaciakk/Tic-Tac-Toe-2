@@ -50,7 +50,7 @@ function App() {
     }
   }, [roundCounter]);
 
-  function handleClick(e) {
+  function handleClick(e: React.MouseEvent<HTMLDivElement>) {
     if (winner) {
       return console.error("rozpocznij nowa gre, mamy juz wygranego");
     } else if (!isGameStarted) {
