@@ -51,8 +51,8 @@
     flex-direction: column;
     background-color: #fff7e9;
     width: 100%;
-    height: 30rem;
+    height: 100%;
     border-radius: 20% 20% 20% 20%;
-    gap: 40px;
+    gap: 10px;
   }
 }

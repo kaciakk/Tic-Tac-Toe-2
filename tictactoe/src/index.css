@@ -26,11 +26,14 @@ button:hover {
 }
 
 @media (max-width: 1300px) {
+  #root {
+    margin: 10px;
+  }
   button {
     background-color: #67523a;
     border-radius: 20px;
     width: 120px;
-    height: 60px;
+    height: 50px;
     color: white;
     border: none;
     font-weight: bold;
