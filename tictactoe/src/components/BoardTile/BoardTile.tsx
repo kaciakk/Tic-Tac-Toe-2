@@ -1,10 +1,21 @@
 import styles from "./BoardTile.module.css";
 
-const BoardTile = ({ box, onClick, onPlayerOneMove, onPlayerTwoMove }) => {
+export type BoardTileProps = {
+  box: number;
+  onClick: (e: React.MouseEvent<HTMLDivElement>) => void;
+  onPlayerOneMove: number[];
+  onPlayerTwoMove: number[];
+};
+const BoardTile = ({
+  box,
+  onClick,
+  onPlayerOneMove,
+  onPlayerTwoMove,
+}: BoardTileProps) => {
   return (
     <>
       {onPlayerOneMove.includes(box) ? (
-        <div id={box} onClick={onClick} className={styles.box}>
+        <div id={String(box)} onClick={onClick} className={styles.box}>
           <div className={styles.boxPlayerOneLine}></div>
           <div className={styles.boxPlayerOneLineTwo}></div>
         </div>

@@ -3,12 +3,12 @@ import styles from "./Controls.module.css";
 export type ControlsProps = {
   onClick: () => void;
   onReset: () => void;
-  playerOneScore: [];
-  playerTwoScore: [];
+  playerOneScore: number;
+  playerTwoScore: number;
   roundCounter: number;
-  winner: string;
+  winner: "X" | "O" | null;
   isGameStarted: boolean;
-  tie: string;
+  tie: number;
 };
 
 const Controls = ({

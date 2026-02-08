@@ -2,8 +2,10 @@ import BoardTile from "../BoardTile/BoardTile";
 import styles from "./Board.module.css";
 
 export type BoardProps = {
-  size: number;
-  onClick: () => void;
+  size: number[];
+  onClick: (index: number) => void;
+  onPlayerOneMove: number[];
+  onPlayerTwoMove: number[];
 };
 const Board = ({
   size,
