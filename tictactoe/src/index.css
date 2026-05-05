@@ -1,0 +1,46 @@
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+}
+
+body {
+  background-color: white;
+}
+
+button {
+  background-color: #67523a;
+  border-radius: 20px;
+  width: 200px;
+  height: 70px;
+  color: white;
+  border: none;
+  font-weight: bold;
+  font-size: 30px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #856d53;
+}
+
+@media (max-width: 1300px) {
+  #root {
+    margin: 10px;
+  }
+  button {
+    background-color: #67523a;
+    border-radius: 20px;
+    width: 120px;
+    height: 50px;
+    color: white;
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #856d53;
+  }
+}
